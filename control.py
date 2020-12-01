@@ -7,7 +7,7 @@ class WeatherRequest:
     ''' wraps requests to weather api'''
 
     def __init__(self, url, headers, querystring):
-        self.querystring = querystring.copy()
+        self.querystring = querystring
         self.url = url
         self.headers = headers
 
