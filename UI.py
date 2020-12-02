@@ -2,7 +2,7 @@ import tkinter as tk
 import control as ct
 
 
-class ToolTip(object):
+class ToolTip():
     def __init__(self, widget):
         self.widget = widget
         self.tipwindow = None
