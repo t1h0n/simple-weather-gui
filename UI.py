@@ -97,8 +97,7 @@ class WeatherApp(tk.Frame):
             self.get_weather_button, 'press enter to get the weather')
 
     def get_weather(self, event):
-        w = self.w
-        w.MakeRequest(self.input_entry.get())
+        self.w.MakeRequest(self.input_entry.get())
         if not w.failedToGetResponse():
             self.output_label['text'] = w.getText()
             w_icon = load_icon(w.getIcon())
